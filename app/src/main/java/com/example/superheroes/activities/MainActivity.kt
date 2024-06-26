@@ -67,9 +67,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navigateToDetail(superhero: Superhero) {
-        //Toast.makeText(this, superhero.name, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, superhero.name, Toast.LENGTH_SHORT).show()
         val intent = Intent(this, DetailActivity::class.java)
-        //intent.putExtra("SUPERHERO_ID", superhero.id)
+        intent.putExtra("SUPERHERO_ID", superhero.id)
         startActivity(intent)
     }
 
