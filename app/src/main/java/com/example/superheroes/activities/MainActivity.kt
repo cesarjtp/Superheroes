@@ -7,16 +7,17 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.superheroes.adapters.SuperheroAdapter
 import com.example.superheroes.R
 import com.example.superheroes.data.Superhero
-import com.example.superheroes.databinding.ActivityMainBinding
 import com.example.superheroes.data.SuperheroApiService
+import com.example.superheroes.databinding.ActivityMainBinding
+import com.example.superheroesapp.adapters.SuperheroAdapter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -67,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navigateToDetail(superhero: Superhero) {
-        Toast.makeText(this, superhero.name, Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, superhero.name, Toast.LENGTH_SHORT).show()
         val intent = Intent(this, DetailActivity::class.java)
         intent.putExtra("SUPERHERO_ID", superhero.id)
         startActivity(intent)
@@ -96,9 +97,9 @@ class MainActivity : AppCompatActivity() {
         val client: OkHttpClient = OkHttpClient.Builder().addInterceptor(interceptor).build()*/
 
         return Retrofit.Builder()
-            .baseUrl("https://superheroapi.com/api/e21a20b7209e9be9bfbe4f3e357f5a45/")
+            .baseUrl("https://superheroapi.com/api/7252591128153666/")
+            //.client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-          //.client(client)
     }
 }

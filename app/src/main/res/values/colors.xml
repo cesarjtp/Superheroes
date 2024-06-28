@@ -2,5 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="azul">#1B9ED9</color>
+    <color name="rojo">#DD1C49</color>
     <color name="transparent_grey">#808B8B8B</color>
+    <color name="good_color">#2280B6</color>
+    <color name="evil_color">#C90A3C</color>
+    <color name="card_background">#FFEB3B</color>
+    <color name="biography_background">#CC9E84</color>
+
 </resources>

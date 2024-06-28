@@ -1,4 +1,4 @@
-package com.example.superheroes.adapters
+package com.example.superheroesapp.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.superheroes.data.Superhero
 import com.example.superheroes.databinding.ItemSuperheroBinding
 import com.squareup.picasso.Picasso
+
 class SuperheroAdapter (
     private var dataSet: List<Superhero> = emptyList(),
     private val onItemClickListener: (Int) -> Unit

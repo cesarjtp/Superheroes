@@ -6,23 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
-    <FrameLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <ProgressBar
-            android:id="@+id/progress_circular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foregroundGravity="center"
-            android:visibility="invisible"
-            android:layout_gravity="center"/>
-
-    </FrameLayout>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

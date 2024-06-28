@@ -48,6 +48,9 @@ dependencies {// Retrofit
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
 
+    // MP Android Chart
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
     // Picasso
     implementation("com.squareup.picasso:picasso:2.8")
 
